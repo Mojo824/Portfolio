@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #0f0f0f; /* Matte black */
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .card {
+    background-color: #1a1a1a; /* Matte panel */
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding: 40px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 0 8px #8e2de2; /* shiny violet glow */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px #a4508b, 0 0 30px #8e2de2;
+    border-color: #8e2de2;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .grid .card {
+    padding: 30px;
+  }
+  
